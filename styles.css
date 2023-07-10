@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap');
 body {
+    margin: 0px;
+    padding: 0px;
     font-family: 'Kiwi Maru', serif;
     background: linear-gradient(to top, #F14A16 30%, #F66B0E 70%);
+    height: 100vh;
 }
 
 #seleccionar-baraja {
