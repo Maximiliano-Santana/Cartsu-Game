@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap');
+body {
+    font-family: 'Kiwi Maru', serif;
+    background: linear-gradient(to top, #F14A16 30%, #F66B0E 70%);
+}
+
+#seleccionar-baraja {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    color: black;
+    width: 100%;
+    height: 70px;
+    background-color: #EFEFEF;
+}
+
+.barajas {
+    display: flex;
+    flex-direction: row;
+}
+
+.baraja {
+    height: 200px;
+    width: 200px;
+    background-color: #112B3C;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    margin: 20px;
+    border-radius: 30px;
+}
+
+.baraja img {
+    height: 80%;
+    width: 200px;
+}
+
+#boton-baraja {
+    display: none;
+}
+
+#selccionar-carta {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#seleccionar-ataque {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.select-ataque {
+    display: inline-flex;
+    flex-direction: column;
+    height: 250px;
+    width: 250px;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: 3px solid black;
+    margin: 5%;
+    border-radius: 20px;
+}
+
+.select-ataque img {
+    height: 200px;
+    width: 200px;
+}
+
+.carta {
+    display: flex;
+    flex-direction: column;
+}
+
+#section-boton-atacar {
+    display: flex;
+    justify-content: center;
+}
+
+.input-ataque {
+    display: none;
+}
+
+.input-ataque:hover+label {
+    background-color: grey;
+}
+
+.input-ataque:checked+label {
+    background-color: #EFEFEF;
+}
+
+#boton-atacar {
+    width: 50%;
+    height: 100px;
+    border-radius: 20px;
+    background-color: white;
+    border: 1px solid white;
+    font-family: 'Kiwi Maru', serif;
+    margin-top: 60px;
+}
+
+#mensajes {
+    justify-content: center;
+}
+
+@media (max-width: 360px) {
+    .barajas {
+        display: none;
+    }
+    #seleccionar-ataque {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Cartsu</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <section id="seleccionar-baraja">
+        <h1 class="titulo">Cartsu</h1>
+        <h2 class="subtitulo">Selecciona una baraja para jugar</h2>
+        <p class="reglas">Bienvenido a Cartsu, un juego de azar, cada baraja te dará una cantidad de ataques distintos de forma aleatoria, así que ELIGE BIEN.</p>
+
+        <div class="barajas">
+            <label for="boton-baraja" class="baraja"> 
+                <img src="images/cartas.png" alt="baraja-imagen1">
+            </label>
+            <label for="boton-baraja" class="baraja">
+                <img src="images/cartas.png" alt="araja-imagen2">
+            </label>
+            <label for="boton-baraja" class="baraja">
+                <img src="images/cartas.png" alt="araja-imagen3">
+            </label>
+            <button id="boton-baraja"></button>
+        </div>
+    </section>
+
+    <section id="seleccionar-carta">
+        <h2 class="titulo">Selecciona una ataque</h2>
+        <div id="seleccionar-ataque">
+            <div id="carta-fuego">
+                <input id="boton-fuego" class="input-ataque" type="radio" name="ataques" />
+                <label for="boton-fuego" class="select-ataque">
+                    <img src="images/fuego.png" alt="imagenFuego">
+                    <span id="cartas-fuego"></span>
+                </label>
+            </div>
+            <div id="carta-agua">
+                <input id="boton-agua" class="input-ataque" type="radio" name="ataques" />
+                <label for="boton-agua" class="select-ataque">
+                    <img src="images/Agua.png" alt="imagenAgua">
+                    <span id="cartas-agua"></span>
+                </label>
+            </div>
+            <div id="carta-hielo">
+                <input id="boton-hielo" class="input-ataque" type="radio" name="ataques" />
+                <label for="boton-hielo" class="select-ataque">
+                    <img src="images/hielo.png" alt="imagenhielo">
+                    <span id="cartas-hielo"></span>
+                </label>
+            </div>
+        </div>
+        <p id="section-boton-atacar">
+            <button id="boton-atacar"><h1>Atacar!</h1></button>
+        </p>
+        <h1>Tienes <span id="vidas-jugador"></span> vidas</p>
+            <p>El enemigo tiene <span id="vidas-enemigo"></span> vidas</p>
+    </section>
+
+    <section id="mensajes">
+        <h2 id="resultado"></h2>
+    </section>
+
+    <section id="reiniciar-juego">
+        <button id="boton-reiniciar">Reiniciar</button>
+    </section>
+    <script src="./js/cartsu.js"></script>
+
+</body>
+
+</html>
