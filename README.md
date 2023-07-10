@@ -1,2 +1,4 @@
 # Cartsu-Game
-A game of cards indpired on rock, seasors, paper
+This is my first project at web debelopping.
+A game of cards indpired on rock, seasors, paper.
+
